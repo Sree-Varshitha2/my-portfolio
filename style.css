@@ -583,14 +583,16 @@ section{
         grid-template-columns:1fr;
     }
 }
-/* ===== Mobile Fix for Home Section Only ===== */
+/* ===== Mobile Header ===== */
 @media screen and (max-width:768px){
 
-    /* Header */
     header{
-        display:block;
-        padding:15px 10px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
         text-align:center;
+        padding:10px 12px;
     }
 
     .logo{
@@ -598,7 +600,7 @@ section{
         width:100%;
         text-align:center;
         font-size:32px;
-        margin:0 auto 18px;
+        margin:0 auto 10px;   /* Reduced gap */
     }
 
     nav{
@@ -610,24 +612,26 @@ section{
         grid-template-columns:repeat(3,1fr);
         justify-items:center;
         align-items:center;
-        row-gap:15px;
-        column-gap:10px;
-        list-style:none;
+        gap:8px;              /* Reduced gap */
         margin:0;
         padding:0;
-        width:100%;
+        list-style:none;
     }
 
     nav ul li{
-        width:100%;
         text-align:center;
     }
 
     nav ul li a{
         display:block;
-        font-size:17px;
+        font-size:15px;
         white-space:nowrap;
     }
+
+    #home{
+        padding:220px 5% 60px;   /* Reduced because header is shorter */
+    }
+}
 
     /* Home Section */
     #home{
