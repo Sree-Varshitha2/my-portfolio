@@ -689,4 +689,21 @@ section{
         flex-wrap:wrap;
         gap:15px;
     }
+/* Certificates Mobile */
+#certificates{
+    display:block;
+    padding:70px 5%;
+}
+
+.certificate-container{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+    width:100%;
+}
+
+.certificate-card{
+    width:100%;
+    min-height:220px;
+}
 }
