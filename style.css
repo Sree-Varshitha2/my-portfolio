@@ -583,61 +583,75 @@ section{
         grid-template-columns:1fr;
     }
 }
-/* ===== Mobile Header ===== */
+/* ================= MOBILE RESPONSIVE ================= */
 @media screen and (max-width:768px){
 
+    /* Header */
     header{
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
         display:flex;
         flex-direction:column;
-        align-items:center;
         justify-content:center;
-        text-align:center;
-        padding:10px 12px;
+        align-items:center;
+        background:#0f172a;
+        padding:12px 15px;
+        z-index:1000;
     }
 
+    /* Logo */
     .logo{
-        display:block;
         width:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
         text-align:center;
         font-size:32px;
-        margin:0 auto 10px;   /* Reduced gap */
+        font-weight:bold;
+        margin-bottom:15px;
     }
 
+    /* Navigation */
     nav{
         width:100%;
     }
 
     nav ul{
+        width:100%;
         display:grid;
         grid-template-columns:repeat(3,1fr);
         justify-items:center;
         align-items:center;
-        gap:8px;              /* Reduced gap */
+        list-style:none;
         margin:0;
         padding:0;
-        list-style:none;
+        row-gap:12px;
+        column-gap:8px;
     }
 
     nav ul li{
+        width:100%;
         text-align:center;
     }
 
     nav ul li a{
         display:block;
         font-size:15px;
-        white-space:nowrap;
+        text-decoration:none;
+        white-space:normal;
+        word-break:break-word;
     }
-
-    #home{
-        padding:220px 5% 60px;   /* Reduced because header is shorter */
-    }
-}
 
     /* Home Section */
     #home{
+        display:flex;
         flex-direction:column-reverse;
+        justify-content:center;
+        align-items:center;
         text-align:center;
-        padding:260px 5% 60px;
+        padding:250px 20px 60px;
     }
 
     .hero-text{
@@ -645,12 +659,14 @@ section{
     }
 
     .hero-text h1{
-        font-size:48px;
+        font-size:50px;
         line-height:1.2;
+        margin-bottom:10px;
     }
 
     .hero-text h2{
         font-size:30px;
+        margin-bottom:10px;
     }
 
     .hero-text h3{
@@ -660,6 +676,7 @@ section{
     .hero-text p{
         font-size:17px;
         line-height:1.8;
+        margin:20px 0;
     }
 
     .hero-image{
@@ -672,6 +689,7 @@ section{
     .hero-image img{
         width:250px;
         height:250px;
+        border-radius:50%;
     }
 
     .hero-buttons,
@@ -680,5 +698,10 @@ section{
         justify-content:center;
         flex-wrap:wrap;
         gap:15px;
+    }
+
+    .btn,
+    .btn2{
+        margin:5px;
     }
 }
