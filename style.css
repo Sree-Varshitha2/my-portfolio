@@ -640,20 +640,20 @@ section{
     }
 
     .hero-text h1{
-        font-size:48px;
+        font-size:42px;
         line-height:1.2;
     }
 
     .hero-text h2{
-        font-size:28px;
-    }
-
-    .hero-text h3{
         font-size:24px;
     }
 
+    .hero-text h3{
+        font-size:20px;
+    }
+
     .hero-text p{
-        font-size:17px;
+        font-size:12px;
         line-height:1.8;
     }
 
@@ -661,7 +661,7 @@ section{
         width:100%;
         display:flex;
         justify-content:center;
-        margin-bottom:30px;
+        margin-bottom:25px;
     }
 
     .hero-image img{
@@ -674,6 +674,6 @@ section{
         display:flex;
         justify-content:center;
         flex-wrap:wrap;
-        gap:15px;
+        gap:10px;
     }
 }
