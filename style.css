@@ -592,7 +592,8 @@ section{
         flex-direction:column;
         justify-content:center;
         align-items:center;
-        padding:15px;
+        text-align:center;
+        padding:15px 10px;
     }
 
     /* Center Logo */
@@ -600,31 +601,30 @@ section{
         width:100%;
         text-align:center;
         font-size:32px;
-        margin-bottom:15px;
+        margin-bottom:18px;
     }
 
-    /* Navigation */
     nav{
         width:100%;
     }
 
     nav ul{
-        display:grid;
-        grid-template-columns:repeat(4,1fr);
-        gap:12px;
-        justify-items:center;
+        display:flex;
+        justify-content:center;
         align-items:center;
-        list-style:none;
-        padding:0;
+        flex-wrap:wrap;
+        gap:10px 14px;
         margin:0;
+        padding:0;
+        list-style:none;
     }
 
     nav ul li{
-        width:auto;
+        flex:0 0 auto;
     }
 
     nav ul li a{
-        font-size:16px;
+        font-size:15px;
         white-space:nowrap;
     }
 
@@ -632,7 +632,7 @@ section{
     #home{
         flex-direction:column-reverse;
         text-align:center;
-        padding:220px 5% 60px;
+        padding:170px 5% 60px;
     }
 
     .hero-text{
@@ -659,6 +659,8 @@ section{
 
     .hero-image{
         width:100%;
+        display:flex;
+        justify-content:center;
         margin-bottom:30px;
     }
 
@@ -673,7 +675,5 @@ section{
         justify-content:center;
         flex-wrap:wrap;
         gap:15px;
-    }
-}
     }
 }
